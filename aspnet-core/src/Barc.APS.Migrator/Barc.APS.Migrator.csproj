@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Barc.APS.Migrator</AssemblyName>
+    <OutputType>Exe</OutputType>
+    <PackageId>Barc.APS.Migrator</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="appsettings.json;log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Abp.Castle.Log4Net" Version="9.2.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Barc.APS.Core\Barc.APS.Core.csproj" />
+    <ProjectReference Include="..\Barc.APS.EntityFrameworkCore\Barc.APS.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+// app global css in SCSS form
+
+// 英文字體
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+// 中文字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+// 中文字體
+.noto-sans-tc {
+  font-family: 'Noto Sans TC';
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 全域設定 */
+body {
+  font-family: 'Roboto Condensed', 'Roboto Mono', 'Noto Sans TC', sans-serif; /* 依次優先選用字體 */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
